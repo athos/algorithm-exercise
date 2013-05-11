@@ -1,4 +1,4 @@
-(ns algorithm-exercise.stable-marriage)
+(ns algorithm-exercise.marriage)
 
 (defn ^:private prefer? [prefs x y]
   (let [m (into {} (map-indexed #(vector %2 %1) prefs))]

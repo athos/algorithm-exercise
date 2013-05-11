@@ -1,5 +1,5 @@
-(ns algorithm-exercise.stable-marriage-test
-  (:use algorithm-exercise.stable-marriage
+(ns algorithm-exercise.marriage-test
+  (:use algorithm-exercise.marriage
         [clojure.test :only (deftest testing is)]))
 
 (deftest test-solve
