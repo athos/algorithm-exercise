@@ -13,4 +13,4 @@
         logger (fn [{num :num} _] (swap! log conj num))]
     (is (identical? (run-game game player AI-strategy logger)
                     player))
-    (is (= @log [20 18 14 13 11 10 8 7 5 4 2 0]))))
+    (is (= @log [20 18 14 13 11 8 2 0]))))

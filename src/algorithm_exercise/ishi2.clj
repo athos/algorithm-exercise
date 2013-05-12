@@ -28,7 +28,7 @@
 
 (defn AI-strategy [{num :num, max :max}]
   (let [[f] (to-sum-of-fibs num)]
-    (if (> num max) 1 f)))
+    (if (> f max) 1 f)))
 
 (defn main []
   (let [num (prompt "石の数？")
