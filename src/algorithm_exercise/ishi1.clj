@@ -24,9 +24,9 @@
         player (fn [_ _] (prompt "何個取りますか？"))
         AI (fn [state max]
               (let [x (AI-strategy state max)]
-                (println "私は %d 個の石を取ります．" x)
+                (printf "私は %d 個の石を取ります．\n" x)
                 x))
-        logger (fn [s _] (printf "残りは%d個です．\n" s) (flush))]
+        logger (fn [s _] (printf "残りは %d 個です．\n" s) (flush))]
     (let [winner (run-game game player AI logger)]
       (if (identical? winner player)
         (println "私の負けです！")
